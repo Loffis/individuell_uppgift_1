@@ -1,10 +1,21 @@
 package se.ecutb.loffe;
 
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
 public class Solution
 {
     public static void main( String[] args )
     {
-        fizzBuzz();
+        //fizzBuzz();
+
+        List<Integer> list = List.of(3, 8, 6, 5, 5, 4, 9, 1, 12, 42, 8, 6, 1, 2, 4, 6, 42);
+        System.out.println(removeDoublets(list));
+    }
+
+    private static Set<Integer> removeDoublets(List<Integer> doublets) {
+        return new LinkedHashSet<>(doublets);
     }
 
     private static void fizzBuzz(){
