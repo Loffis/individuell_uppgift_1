@@ -19,7 +19,7 @@ public class Solution
         String robberLangString = "Enon jojätottotelolånongog momenoninongog momedod SosTotORorA bobokoksostotävoveror i ocockoksoså.";
         System.out.println(TranslateToSwedish(robberLangString) + "\n");
 
-        System.out.println("whatSquare output: " + whatSquare(4));
+        System.out.println("whatSquare output: " + whatSquare(64));
     }
 
     // Riskorn
@@ -32,7 +32,7 @@ public class Solution
         for (int i = 0; i < 64; i++) {
             rice = Math.pow(2, i);
             sum += rice;
-            if (input < (sum + 1)) {
+            if (input <= sum) {
                 return i + 1;
             }
         }
